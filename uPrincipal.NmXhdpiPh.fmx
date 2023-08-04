@@ -1,0 +1,9 @@
+inherited fmMainForm_NmXhdpiPh: TfmMainForm_NmXhdpiPh
+  ClientHeight = 615
+  ClientWidth = 400
+  DesignerMasterStyle = 3
+  inherited Label1: TLabel
+    Size.Width = 395.000000000000000000
+    TextSettings.Font.StyleExt = {00070000000000000004000000}
+  end
+end

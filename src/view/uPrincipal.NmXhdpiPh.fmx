@@ -1,0 +1,70 @@
+inherited fmMainForm_NmXhdpiPh: TfmMainForm_NmXhdpiPh
+  ClientHeight = 615
+  ClientWidth = 400
+  DesignerMasterStyle = 3
+  inherited pnlBarraTarefas: TPanel
+    Position.Y = 573.000000000000000000
+    Size.Width = 400.000000000000000000
+  end
+  inherited lBackground: TLayout
+    Size.Width = 400.000000000000000000
+    Size.Height = 573.000000000000000000
+    inherited lSideMenu: TLayout
+      inherited btnDocumentos: TButton
+        OnClick = btnDocumentosClick
+      end
+      inherited btnConfiguracoes: TButton
+        OnClick = btnConfiguracoesClick
+      end
+    end
+    inherited tcPrincipal: TTabControl
+      Size.Width = 400.000000000000000000
+      Size.Height = 573.000000000000000000
+      Sizes = (
+        400s
+        573s
+        400s
+        573s
+        400s
+        573s)
+      inherited tiDesktop: TTabItem
+        ExplicitSize.cx = 8.000000000000000000
+        ExplicitSize.cy = 8.000000000000000000
+      end
+      inherited tiDocuments: TTabItem
+        ExplicitSize.cx = 8.000000000000000000
+        ExplicitSize.cy = 8.000000000000000000
+        inherited lDocumentsBackground: TLayout
+          Size.Width = 400.000000000000000000
+          Size.Height = 523.000000000000000000
+        end
+        inherited lDocumentsTop: TLayout
+          Size.Width = 400.000000000000000000
+          inherited btnDocumentsBack: TButton
+            Size.Height = 50.000000000000000000
+          end
+          inherited Label1: TLabel
+            Size.Width = 352.000000000000000000
+          end
+        end
+      end
+      inherited tiControl: TTabItem
+        ExplicitSize.cx = 8.000000000000000000
+        ExplicitSize.cy = 8.000000000000000000
+        inherited lControlBackground: TLayout
+          Size.Width = 400.000000000000000000
+          Size.Height = 523.000000000000000000
+        end
+        inherited lControlTop: TLayout
+          Size.Width = 400.000000000000000000
+          inherited btnControlBack: TButton
+            Size.Height = 50.000000000000000000
+          end
+          inherited Label2: TLabel
+            Size.Width = 352.000000000000000000
+          end
+        end
+      end
+    end
+  end
+end

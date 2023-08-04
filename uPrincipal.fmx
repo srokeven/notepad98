@@ -1,0 +1,47 @@
+object fmMainForm: TfmMainForm
+  Left = 0
+  Top = 0
+  Caption = 'Linux'
+  ClientHeight = 506
+  ClientWidth = 352
+  StyleBook = StyleBook1
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 3
+  object StyleBook1: TStyleBook
+    Styles = <
+      item
+      end
+      item
+        Platform = 'Windows 10 Desktop'
+        ResourcesBin = {
+          464D585F5354594C4520322E3501060C50616E656C325374796C653103C20000
+          545046300A5452656374616E676C650C70616E656C327374796C757309537479
+          6C654E616D65060C50616E656C325374796C653105416C69676E070643656E74
+          65720A46696C6C2E436F6C6F72070D636C61426C756576696F6C657407486974
+          54657374080A53697A652E576964746805000000000000409A08400B53697A65
+          2E4865696768740500000000000000F005401453697A652E506C6174666F726D
+          44656661756C74080C5374726F6B652E436F6C6F720709784646434343434343
+          0000}
+      end>
+    Left = 280
+    Top = 280
+  end
+  object Label1: TLabel
+    Align = Top
+    AutoSize = True
+    StyledSettings = [Family, FontColor]
+    Margins.Left = 5.000000000000000000
+    Margins.Top = 5.000000000000000000
+    Position.X = 5.000000000000000000
+    Position.Y = 5.000000000000000000
+    Size.Width = 347.000000000000000000
+    Size.Height = 20.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 16.000000000000000000
+    TextSettings.Font.StyleExt = {00070000000000000004000000}
+    Text = 'Ol'#225', Linux'
+    TabOrder = 0
+  end
+end

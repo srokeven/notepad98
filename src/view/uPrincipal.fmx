@@ -1,0 +1,211 @@
+object fmMainForm: TfmMainForm
+  Left = 0
+  Top = 0
+  Caption = 'Linux'
+  ClientHeight = 506
+  ClientWidth = 352
+  StyleBook = StyleBook1
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 3
+  object StyleBook1: TStyleBook
+    Styles = <
+      item
+      end
+      item
+        Platform = 'Windows 10 Desktop'
+        ResourcesBin = {
+          464D585F5354594C4520322E3501060C50616E656C325374796C653103C20000
+          545046300A5452656374616E676C650C70616E656C327374796C757309537479
+          6C654E616D65060C50616E656C325374796C653105416C69676E070643656E74
+          65720A46696C6C2E436F6C6F72070D636C61426C756576696F6C657407486974
+          54657374080A53697A652E576964746805000000000000409A08400B53697A65
+          2E4865696768740500000000000000F005401453697A652E506C6174666F726D
+          44656661756C74080C5374726F6B652E436F6C6F720709784646434343434343
+          0000}
+      end>
+    Left = 280
+    Top = 280
+  end
+  object pnlBarraTarefas: TPanel
+    Align = MostBottom
+    Position.Y = 464.000000000000000000
+    Size.Width = 352.000000000000000000
+    Size.Height = 42.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    object btnIniciar: TButton
+      Align = Left
+      Images = dmRepImagens.imgIcones
+      ImageIndex = 0
+      Size.Width = 105.000000000000000000
+      Size.Height = 42.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'Iniciar'
+      OnClick = btnIniciarClick
+    end
+  end
+  object lBackground: TLayout
+    Align = Client
+    Size.Width = 352.000000000000000000
+    Size.Height = 464.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    object lSideMenu: TLayout
+      Align = Left
+      Size.Width = 201.000000000000000000
+      Size.Height = 464.000000000000000000
+      Size.PlatformDefault = False
+      Visible = False
+      TabOrder = 0
+      object btnDocumentos: TButton
+        Align = Top
+        Images = dmRepImagens.imgIcones
+        ImageIndex = 1
+        Size.Width = 201.000000000000000000
+        Size.Height = 49.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        Text = 'Documentos'
+      end
+      object btnConfiguracoes: TButton
+        Align = Top
+        Images = dmRepImagens.imgIcones
+        ImageIndex = 2
+        Position.Y = 49.000000000000000000
+        Size.Width = 201.000000000000000000
+        Size.Height = 49.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Text = 'Painel de controle'
+      end
+    end
+    object tcPrincipal: TTabControl
+      Align = Client
+      Size.Width = 352.000000000000000000
+      Size.Height = 464.000000000000000000
+      Size.PlatformDefault = False
+      TabHeight = 49.000000000000000000
+      TabIndex = 0
+      TabOrder = 1
+      TabPosition = None
+      Sizes = (
+        352s
+        464s
+        352s
+        464s
+        352s
+        464s)
+      object tiDesktop: TTabItem
+        CustomIcon = <
+          item
+          end>
+        IsSelected = True
+        Size.Width = 8.000000000000000000
+        Size.Height = 8.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = ''
+        TabOrder = 0
+        Text = 'Desktop'
+        ExplicitSize.cx = 8.000000000000000000
+        ExplicitSize.cy = 8.000000000000000000
+      end
+      object tiDocuments: TTabItem
+        CustomIcon = <
+          item
+          end>
+        IsSelected = False
+        Size.Width = 8.000000000000000000
+        Size.Height = 8.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = ''
+        TabOrder = 0
+        Text = 'Documentos'
+        ExplicitSize.cx = 8.000000000000000000
+        ExplicitSize.cy = 8.000000000000000000
+        object lDocumentsBackground: TLayout
+          Align = Client
+          Size.Width = 352.000000000000000000
+          Size.Height = 414.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+        end
+        object lDocumentsTop: TLayout
+          Align = Top
+          Size.Width = 352.000000000000000000
+          Size.Height = 50.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          object btnDocumentsBack: TButton
+            Align = Left
+            Position.Y = 1.000000000000000000
+            Size.Width = 48.000000000000000000
+            Size.Height = 48.000000000000000000
+            Size.PlatformDefault = False
+            StyleLookup = 'arrowlefttoolbutton'
+            TabOrder = 0
+            Text = 'Voltar'
+            OnClick = btnDocumentsBackClick
+          end
+          object Label1: TLabel
+            Align = Client
+            Size.Width = 304.000000000000000000
+            Size.Height = 50.000000000000000000
+            Size.PlatformDefault = False
+            Text = 'Documentos'
+            TabOrder = 1
+          end
+        end
+      end
+      object tiControl: TTabItem
+        CustomIcon = <
+          item
+          end>
+        IsSelected = False
+        Size.Width = 8.000000000000000000
+        Size.Height = 8.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = ''
+        TabOrder = 0
+        Text = 'Painel de Controle'
+        ExplicitSize.cx = 8.000000000000000000
+        ExplicitSize.cy = 8.000000000000000000
+        object lControlBackground: TLayout
+          Align = Client
+          Size.Width = 352.000000000000000000
+          Size.Height = 414.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+        end
+        object lControlTop: TLayout
+          Align = Top
+          Size.Width = 352.000000000000000000
+          Size.Height = 50.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          object btnControlBack: TButton
+            Align = Left
+            Position.Y = 1.000000000000000000
+            Size.Width = 48.000000000000000000
+            Size.Height = 48.000000000000000000
+            Size.PlatformDefault = False
+            StyleLookup = 'arrowlefttoolbutton'
+            TabOrder = 0
+            Text = 'Voltar'
+            OnClick = btnControlBackClick
+          end
+          object Label2: TLabel
+            Align = Client
+            Size.Width = 304.000000000000000000
+            Size.Height = 50.000000000000000000
+            Size.PlatformDefault = False
+            Text = 'Painel de Controle'
+            TabOrder = 1
+          end
+        end
+      end
+    end
+  end
+end
